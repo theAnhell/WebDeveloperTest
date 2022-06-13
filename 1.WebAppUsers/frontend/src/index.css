@@ -1,0 +1,62 @@
+:root {
+  --primary: #4c808a;
+  --light-primary: #c7d9f4;
+  --dark-primary: #304460;
+
+  --shadow: #ccc;
+
+  --secondary: #b84c7a;
+
+  --success: #01692c;
+  --green: #01692c;
+  --warning: #c4b837;
+  --yellow: #ffef4a;
+  --light: #f8f9fa;
+  --white: #f8f9fa;
+
+  --danger: #9e101c;
+  --red: #9e101c;
+
+  --dark: #343a40;
+  --black: #343a40;
+  --transition-speed: 600ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  position: relative;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  -webkit-border-radius: 7px;
+  background-color: var(--dark-primary);
+  -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}

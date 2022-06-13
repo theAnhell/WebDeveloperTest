@@ -1,0 +1,173 @@
+/** Button */
+.ButtonGroupWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonGroupButton {
+  --color-button: var(--shadow);
+  --color-border: var(--shadow);
+  background-color: var(--color-button);
+  color: white;
+  padding: 0.375em 0.75em;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--color-border);
+  font-size: 1em;
+  line-height: 1.5;
+  cursor: pointer;
+  text-transform: none;
+  overflow: visible;
+  font-family: inherit;
+  transition: all 0.2s;
+  min-width: 4em;
+}
+.ButtonGroup > button:first-child {
+  border-top-left-radius: 0.25em;
+  border-bottom-left-radius: 0.25em;
+}
+.ButtonGroup > button:last-child {
+  border-top-right-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+
+.Button_group_label {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.Button {
+  --color-button: var(--primary);
+  --color-border: var(--primary);
+  background-color: var(--color-button);
+  color: white;
+  border-radius: 0.25em;
+  margin: 0;
+  padding: 0.375em 0.5em;
+  font-weight: 400;
+  border: 1px solid var(--color-border);
+  font-size: 1em;
+  line-height: 1.5;
+  cursor: pointer;
+  text-transform: none;
+  max-width: 25em;
+  overflow: visible;
+  font-family: inherit;
+  transition: all 0.2s;
+  display: grid;
+  place-items: center;
+}
+.Button:disabled {
+  --color-button: #ccc;
+  --color-border: #999;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+.Button___inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+}
+
+.Button:hover,
+.Button:focus {
+  filter: brightness(115%);
+  background-color: var(--color-border);
+  border: 1px solid white;
+  transform: scale(1.05, 1.05);
+  color: white;
+}
+
+.Button___primary {
+  --color-button: var(--primary);
+  --color-border: var(--primary);
+  color: white;
+}
+.Button___light_primary {
+  --color-button: var(--light-primary);
+  --color-border: var(--light-primary);
+  color: black;
+}
+.Button___dark_primary {
+  --color-button: var(--dark-primary);
+  --color-border: var(--dark-primary);
+  color: white;
+}
+
+.Button___secondary {
+  --color-button: var(--secondary);
+  --color-border: var(--secondary);
+  color: white;
+}
+
+.Button___green,
+.Button___success {
+  --color-button: var(--green);
+  --color-border: var(--green);
+  color: white;
+}
+.Button___yellow,
+.Button___warning {
+  --color-button: var(--yellow);
+  --color-border: var(--yellow);
+  color: black;
+}
+.Button___white,
+.Button___light {
+  --color-button: var(--white);
+  --color-border: var(--white);
+  color: black;
+}
+.Button___red,
+.Button___danger {
+  --color-button: var(--red);
+  --color-border: var(--red);
+  color: white;
+}
+.Button___blue {
+  --color-button: var(--blue);
+  --color-border: var(--blue);
+  color: white;
+}
+.Button___black,
+.Button___dark {
+  --color-button: var(--black);
+  --color-border: var(--black);
+  color: white;
+}
+.Button___outline {
+  color: black;
+  --color-border: var(--color-button);
+  background-color: white;
+}
+.Button___active {
+  background-color: var(--color-border);
+  filter: brightness(115%);
+  color: white;
+}
+
+.Button___clear {
+  --color-button: transparent;
+  --color-border: transparent;
+}
+
+.Button___isIcon {
+  --color-button: transparent;
+  color: black;
+  --color-border: transparent;
+}

@@ -1,0 +1,270 @@
+.Wrapper {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #0b6873;
+  grid-template-rows:auto 1fr;
+}
+
+.Title {
+  padding: 0.5em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #0b6873;
+  background-color: white;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.slide {
+  flex: 1.5;
+  font-size: 1em;
+  z-index: 2;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin: 1em;
+  background-color: white;
+}
+
+.slide___small {
+  background-color: white;
+  flex: 1;
+  font-size: 0.75em;
+
+  max-height: 90%;
+  max-width: 90%;
+  margin: 1em;
+
+  z-index: 2;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.right_arrow {
+  position: absolute;
+  top: 38%;
+  right: 0.2em;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 2rem;
+  background-color: black;
+  padding: 0.375em;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left_arrow {
+  position: absolute;
+  top: 38%;
+  left: 0.2em;
+  font-size: 2rem;
+  height: 1.5em;
+  width: 1.5em;
+  background-color: black;
+  padding: 0.375em;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Panel */
+.panel {
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.panel_title {
+  padding-bottom: 1em;
+  margin: 0;
+  font-size: 1.5em;
+  color: #0b6873;
+}
+.panel_content {
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
+.panel_example_static,
+.panel_example_relative,
+.panel_example_absolute,
+.panel_example_fixed,
+.panel_example_sticky {
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.panel_example_absolute {
+  position: relative;
+}
+
+.panel_example_sticky {
+  overflow-x: auto;
+  flex-direction: row;
+  max-width: 300px;
+}
+
+.panel_example_static div,
+.panel_example_relative div,
+.panel_example_absolute div,
+.panel_example_fixed div,
+.panel_example_sticky div {
+  min-width: 2em;
+  min-height: 1.5em;
+  max-width: 2em;
+  max-height: 1.5em;
+  background-color: #0b6873;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 0.2em;
+}
+
+.panel_example_static .panel_static_red {
+  background-color: red;
+}
+
+.panel_example_relative .panel_relative_red {
+  background-color: red;
+  position: relative;
+  bottom: 0.5em;
+  left: 0.25em;
+}
+
+.panel_example_absolute .panel_absolute_red {
+  background-color: red;
+  position: absolute;
+  bottom: 1.5em;
+  right: 2.4em;
+}
+
+.panel_example_fixed .panel_fixed_red {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.panel_example_sticky .panel_sticky_red {
+  background-color: red;
+  position: sticky;
+  left: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .Title {
+    font-size: 4em;
+  }
+
+  .slide {
+    flex: 2;
+    font-size: 1.2em;
+  }
+
+  .slide___small {
+    flex: 1;
+    font-size: 0.75em;
+
+    max-height: 90%;
+    max-width: 90%;
+  }
+
+  /* Panel */
+
+  .panel_example_sticky {
+    overflow-x: auto;
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  .panel_example_static div,
+  .panel_example_relative div,
+  .panel_example_absolute div,
+  .panel_example_fixed div,
+  .panel_example_sticky div {
+    min-width: 4em;
+    min-height: 3em;
+    max-width: 4em;
+    max-height: 3em;
+    background-color: #0b6873;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 0.2em;
+  }
+
+  .panel_example_static .panel_static_red {
+    background-color: red;
+  }
+
+  .panel_example_relative .panel_relative_red {
+    background-color: red;
+    position: relative;
+    bottom: 0.5em;
+    left: 0.25em;
+  }
+
+  .panel_example_absolute .panel_absolute_red {
+    background-color: red;
+    position: absolute;
+    bottom: 1.5em;
+    right: 2.4em;
+  }
+
+  .panel_example_fixed .panel_fixed_red {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .panel_example_sticky .panel_sticky_red {
+    background-color: red;
+    position: sticky;
+    left: 0;
+  }
+  .right_arrow {
+    height: 2em;
+    width: 2em;
+
+    right: 1em;
+    font-size: 2rem;
+  }
+
+  .left_arrow {
+    font-size: 2rem;
+    left: 1em;
+    height: 2em;
+    width: 2em;
+  }
+}

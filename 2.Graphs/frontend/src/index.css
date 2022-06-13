@@ -1,0 +1,39 @@
+:root {
+  --primary: #4c808a;
+  --light-primary: #c7d9f4;
+  --dark-primary: #304460;
+
+  --shadow: #ccc;
+
+  --secondary: #b84c7a;
+
+  --success: #01692c;
+  --green: #01692c;
+  --warning: #c4b837;
+  --yellow: #ffef4a;
+  --light: #f8f9fa;
+  --white: #f8f9fa;
+
+  --danger: #9e101c;
+  --red: #9e101c;
+
+  --dark: #343a40;
+  --black: #343a40;
+  --transition-speed: 600ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  position: relative;
+  margin: 0;
+}

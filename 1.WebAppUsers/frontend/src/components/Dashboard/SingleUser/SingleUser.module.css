@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  padding: 1em;
+}
+
+.card {
+  background-color: #fafafa;
+  font-size: 1.2em;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid var(--shadow);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

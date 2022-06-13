@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-bottom: 1px solid var(--shadow);
+  padding-bottom: 1em;
+}
+
+.form___names {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.passwordWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    place-items: center;
+    padding: 1em;
+  }
+}

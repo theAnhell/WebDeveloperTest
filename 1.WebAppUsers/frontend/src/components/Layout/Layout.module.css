@@ -1,0 +1,25 @@
+/** Layout */
+.Main {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "content";
+  grid-template-rows: 5rem 1fr;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.Main_content {
+  transition: margin 200ms ease;
+  grid-area: content;
+  height: 100%;
+  overflow-y: auto;
+}
+.Main_navigation {
+  grid-area: nav;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1em;
+}

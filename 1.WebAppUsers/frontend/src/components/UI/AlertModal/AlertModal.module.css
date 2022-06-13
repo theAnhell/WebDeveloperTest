@@ -1,0 +1,22 @@
+/** AlertsModal */
+.Modal {
+  position: fixed;
+  z-index: 500;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 0 1em;
+  transition: all 1s ease-out;
+  max-width: 500px;
+  border-radius: 1em;
+  position: absolute;
+  left: 50%;
+}
+
+.Modal_content {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}

@@ -1,0 +1,61 @@
+.Wrapper {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  max-height: 100vh;
+}
+
+.Header {
+  background-color: #131235;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+.content {
+  font-size: 0.6em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3em;
+  padding: 1em;
+  overflow-y:auto;
+}
+.distances {
+  display: grid;
+  grid-template-columns: 1fr 15px 1fr;
+  place-content: center;
+}
+
+.distance_item {
+  display: grid;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.distance_item_line {
+  background-color: #733c7b;
+  width: 100%;
+  height: 25px;
+}
+
+
+
+
+@media (min-width: 600px) {
+  .Header{
+    font-size: 4em;
+  }
+  .content{
+    font-size: 0.8em;
+    
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  .distances {
+
+    grid-template-columns: 1fr 25px 1fr;
+  } 
+}

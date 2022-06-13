@@ -1,0 +1,9 @@
+/** Actions */
+.Actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}

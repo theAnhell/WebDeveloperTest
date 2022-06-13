@@ -1,0 +1,25 @@
+.ListItem {
+  background-color: #733c7b;
+  min-height: 10em;
+  color: white;
+  padding: 1em;
+  border-radius: 0.2em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.ListItem_number {
+  position: absolute;
+  font-size: 10em;
+  bottom: -0.25em;
+  right: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.ListItem_name {
+  font-weight: bold;
+  font-size: 2em;
+  z-index: 3;
+}
+.ListItem_distance {
+  margin-top: auto;
+}

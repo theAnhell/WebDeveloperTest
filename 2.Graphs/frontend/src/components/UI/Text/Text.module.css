@@ -1,0 +1,40 @@
+.Text {
+  display: flex;
+  width: auto;
+  font-weight: 500;
+  gap: 0.5em;
+  flex-direction: column;
+  gap: 0;
+}
+.Text p {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+.Text___inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.375em;
+}
+.Text___title {
+  font-size: 1.375em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+.Text___noPadding {
+  padding-bottom: 0;
+}
+
+.Text___center {
+  align-items: center;
+}
+
+.TextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.TextTitle {
+  color: var(--primary);
+  border-bottom: 3px solid var(--green);
+}

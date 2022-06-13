@@ -1,0 +1,30 @@
+.card {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.card_title {
+  color: var(--dark-primary);
+  margin: 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-bottom: 1px solid var(--shadow);
+  padding-bottom: 1em;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    place-items: center;
+    padding: 1em;
+  }
+  .card {
+    width: 70%;
+    box-shadow: 0 2px 3px var(--shadow);
+    border: 1px solid var(--shadow);
+    border-radius: 0.5em;
+  }
+}

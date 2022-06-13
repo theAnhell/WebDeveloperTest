@@ -1,0 +1,38 @@
+.Wrapper {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  max-height: 100vh;
+  font-size: 0.7em;
+}
+
+.Header {
+  background-color: #131235;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1em;
+}
+.Header_title {
+  font-size: 2em;
+}
+
+.WrapperRestaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1em;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+
+@media (min-width: 600px) {
+  .Wrapper{
+    font-size:1em ;
+  }
+  .Header{
+    font-size: 2em;
+  }
+}

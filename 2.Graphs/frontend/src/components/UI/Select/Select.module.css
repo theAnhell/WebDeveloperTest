@@ -1,0 +1,28 @@
+.SelectWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.Select {
+  width: 100%;
+  min-width: 5em;
+  padding: 0.5em;
+  font-size: 1em;
+  box-sizing: border-box;
+  border: 1px solid var(--shadow);
+  line-height: normal;
+  cursor: pointer;
+  border-radius: 0.5em;
+  display: block;
+}
+
+.Select:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+}
+
+.Input_label {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}

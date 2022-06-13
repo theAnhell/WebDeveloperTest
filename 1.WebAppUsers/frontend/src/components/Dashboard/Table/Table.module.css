@@ -1,0 +1,42 @@
+.Wrapper {
+  padding: 1em;
+}
+
+.Table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Table td,
+.Table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  height: 2px;
+}
+
+.Table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.Table tr:hover {
+  background-color: #eee;
+  color: var(--primary);
+}
+.Table th {
+  padding: 12px 0;
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+}
+
+.Pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
